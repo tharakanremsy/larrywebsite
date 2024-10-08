@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDEAS HAVE CONSEQUENCES</title>
+    <!-- Favicon setup -->
+    <link rel="icon" type="image/png" href="images/IdeasHaveConseuqneces.png">
+    <meta name="title" content="IDEAS HAVE CONSEQUENCES" />
+    <meta name="description" content="WITH LARRY ALEX TAUNTON" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IDEAS HAVE CONSEQUENCES" />
+    <meta property="og:description" content="WITH LARRY ALEX TAUNTON" />
+    <meta property="og:image" content="https://georgestep-mywork.github.io/tomeapp/images/Larry_Taunton.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="IDEAS HAVE CONSEQUENCES" />
+    <meta property="twitter:description" content="WITH LARRY ALEX TAUNTON" />
+    <meta property="twitter:image" content="https://georgestep-mywork.github.io/tomeapp/images/Larry_Taunton.jpg" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            height: 100%;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .background {
+            background-image: url('images/Larry_Taunton.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.35);
+            z-index: -1;
+        }
+
+        .left-section {
+            flex-basis: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 60px;
+            z-index: 2;
+        }
+
+        .title {
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav li {
+            margin-right: 15px;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .nav li a:hover {
+            color: #cccccc;
+        }
+
+        .logo {
+            position: absolute;
+            top: 25px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        .logo img {
+            width: 200px;
+            height: auto;
+        }
+
+        @media (min-width: 769px) {
+            .title {
+                white-space: nowrap;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .background {
+                background-image: url('images/larry-mobile.png');
+            }
+
+            .left-section {
+                flex-basis: 100%;
+                padding: 20px;
+                align-items: center;
+            }
+
+            .title {
+                font-size: 2rem;
+                text-align: center;
+                white-space: normal;
+            }
+
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav li {
+                margin: 10px 0;
+            }
+
+            .logo {
+                left: 20px;
+            }
+
+            .logo img {
+                width: 133px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .title {
+                font-size: 1.5rem;
+            }
+
+            .nav li a {
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="logo">
+    <img src="images/IdeasHaveConseuqneces.png" alt="Logo">
+</div>
+
+<div class="container">
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="left-section">
+        <div class="title">IDEAS HAVE CONSEQUENCES</div>
+        <ul class="nav">
+            <li><a href="https://www.growtribes.com/larry" target="_blank">Latest</a></li>
+            <li><a href="https://www.growtribes.com/larry/blogs" target="_blank">Blog</a></li>
+            <li><a href="https://www.growtribes.com/larry/shows" target="_blank">Watch</a></li>
+            <li><a href="https://www.growtribes.com/larry/courses" target="_blank">Courses</a></li>
+            <li><a href="https://www.growtribes.com/larry/about" target="_blank">About</a></li>
+            <li><a href="https://www.growtribes.com/larry/donate" target="_blank">Donate</a></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
